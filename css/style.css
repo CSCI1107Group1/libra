@@ -1,0 +1,59 @@
+aside {
+
+  position: fixed;
+  float: left;
+  width: 25%;
+  padding-left: 5px;
+}
+
+section {
+
+  width: 73%;
+  padding-left: 2%;
+  float: right;
+
+}
+
+.list-group img {
+
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.news-item {
+
+  background-color: #FEFEFE;
+  box-shadow: 1px 1px 3px #555;
+  overflow: auto;
+  width:90%;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.news-item a {
+
+  color: #BBB;
+  font-style: italic;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.news-item > h3 {
+
+  margin-top: 5px; 
+  font-size: 2em;
+}
+
+.news-item img {
+  width: 20%;
+  float: left;
+  margin-right: 20px;
+}
+
+.news-item p {
+
+  margin-right: 20px;
+  margin-top: 10px;
+  float:right;
+  width: 75%;
+}
