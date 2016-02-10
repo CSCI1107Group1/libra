@@ -1,0 +1,12 @@
+<div class="center">
+  <div class="login_container">
+    <h1>Libra</h1>
+    <%= form_for :session, url:'/users/login'  do |f| %>
+      <%= f.label(:l_email, "Email ") %>
+      <%= f.text_field(:email, class: 'form-control') %>
+      <%= f.label(:l_password, "Password ") %>
+      <%= f.password_field(:password, :class => 'form-control') %>
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

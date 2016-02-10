@@ -1,0 +1,9 @@
+<%= render '/layouts/navbar' %>
+<section>
+  <% @users.each do |u| %>
+    <div class="news-item">
+      <img src="<%= u.image_path %>" alt="Picture of of: <%= u.first_name %>">
+      <h3><%= link_to "#{u.first_name} #{u.last_name}", "/users/#{u.id}" %></h3>
+    </div>
+  <% end %>
+</section>

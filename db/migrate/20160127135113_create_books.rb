@@ -8,6 +8,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :genre
       t.string :image_path
       t.references :user
+
     end
   end
 end

@@ -1,0 +1,96 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+aside {
+
+  position: fixed;
+  float: left;
+  width: 25%;
+  padding-left: 5px;
+  background-color: #AAA;
+  height: 102%;
+}
+
+section {
+
+  width: 73%;
+  padding-left: 2%;
+  float: right;
+
+}
+
+aside img {
+
+  width: 50%;
+  margin-left: 22%;
+
+}
+
+.image-frame {
+
+  margin-top: 5%;
+}
+
+.sidebar-options {
+
+  padding: 0;
+  margin-top: 10%;
+}
+
+.sidebar-options li {
+
+  padding: 15px 5px;
+  width:99%;
+  list-style: none;
+  border-top: 1px solid #DDD;
+}
+
+.sidebar-options li:hover {
+
+  background-color: #CCC;
+}
+
+.news-item {
+
+  background-color: #FEFEFE;
+  box-shadow: 1px 1px 3px #555;
+  overflow: auto;
+  width:90%;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.news-item a {
+
+  color: #BBB;
+  font-style: italic;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.news-item > h3 {
+
+  margin-top: 5px; 
+  font-size: 2em;
+}
+
+.news-item img {
+  width: 20%;
+  float: left;
+  margin-right: 20px;
+}
+
+.news-item p {
+
+  margin-right: 20px;
+  margin-top: 10px;
+  float:right;
+  width: 75%;
+}
+
+.news-item:hover {
+
+  background-color: #EFEFEF;
+}
+
