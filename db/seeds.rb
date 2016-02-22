@@ -30,9 +30,5 @@ Book.create(title: "Crime and Punishment", image_path: "/media/img/crimeandpunis
 Book.create(title: "Pride and Prejudice", image_path: "/media/img/pride.jpg", summary: "The novel centres on Elizabeth Bennet, the second of the five daughters of a landed country gentleman. Elizabeth's father, Mr Bennet, is a bookish man and somewhat neglectful of his responsibilities. In contrast Elizabeth's mother, Mrs Bennet, a woman who lacks social graces, is primarily concerned with finding suitable husbands for her five daughters. Jane Bennet, the eldest daughter, is distinguished by her kindness and beauty; Elizabeth Bennet shares her father's keen wit and occasionally sarcastic outlook; Mary is not pretty but is studious, devout and musical albeit lacking in taste; Catherine, sometimes called Kitty, the fourth sister, follows where her younger sister leads while Lydia is flirtatious and lacks maturity.", user_id:6)
 Book.create(title: "The Picture of Dorian Gray", image_path: "/media/img/dorian.jpg", summary: "Dorian Gray is the subject of a full-length portrait in oil by Basil Hallward, an artist who is impressed and infatuated by Dorian's beauty; he believes that Dorian’s beauty is responsible for the new mode in his art as a painter. Through Basil, Dorian meets Lord Henry Wotton, and he soon is enthralled by the aristocrat's hedonistic worldview: that beauty and sensual fulfilment are the only things worth pursuing in life.Newly understanding that his beauty will fade, Dorian expresses the desire to sell his soul, to ensure that the picture, rather than he, will age and fade. The wish is granted, and Dorian pursues a libertine life of varied and amoral experiences, while staying young and beautiful; all the while his portrait ages and records every soul-corrupting sin.", user_id:7)
 
-
-
-
-
 puts ("Added books")
 

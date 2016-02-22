@@ -4,20 +4,22 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-    root 'users#new'
+    root 'sessions#create'
     get '/books' => 'books#index'
-    get '/books/:id' => 'books#show', as: :book
+    get '/books/new' => 'books#new'
+    post '/books' => 'books#create'
+    get '/books/:id' => 'books#show'
 
     get '/users' => 'users#index'
-    get '/users/:id' => 'users#show'
     get '/users/login' => 'sessions#new'
     post '/users/login' => 'sessions#create'
     delete '/users/logout' => 'sessions#destroy'
 
-    get '/users/signup' => 'users#new'
+    get '/users/new' => 'users#new'
     post '/users' => 'users#create'
-    get '/users/edit/:id' => 'users#edit', as: :user
+    get '/users/edit/:id' => 'users#edit'
     post'/users/edit/:id' => 'users#update'
+    get '/users/:id' => 'users#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -68,3 +70,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+

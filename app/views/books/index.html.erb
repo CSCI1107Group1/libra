@@ -3,7 +3,7 @@
  <% @books.each do |b| %>
     <div class="news-item">
       <img src="<%= b.image_path %>" alt="Cover of: <%= b.title %>">
-      <h3><%= link_to b.title, book_path(b) %></h3>
+      <h3><%= link_to b.title, "/books/#{b.id}" %></h3>
       <p><%= link_to "#{b.user.first_name} #{b.user.last_name}", "/users/#{b.user.id}" %>
       <p><%= excerpt(b.summary, "", radius: 300) %>...</p>
     </div>
