@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160127135113) do
     t.text     "summary"
     t.string   "genre"
     t.string   "image_path"
+    t.string   "book_path"
     t.integer  "user_id"
   end
 

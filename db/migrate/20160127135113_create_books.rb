@@ -7,6 +7,7 @@ class CreateBooks < ActiveRecord::Migration
       t.text :summary
       t.string :genre
       t.string :image_path
+      t.string :book_path
       t.references :user
 
     end

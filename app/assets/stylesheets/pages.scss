@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "bootstrap";
+@import "bootstrap-sprockets";
+
 aside {
 
   position: fixed;
@@ -88,3 +90,24 @@ h1 {
   text-align: center;
   margin-bottom: 15px;
 }
+
+label {
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.book_cover{
+
+  -webkit-filter:brightness(100%);
+  -webkit-transition: all 0.5s; 
+}
+
+.book_cover:hover {
+
+  -webkit-filter:brightness(50%);
+  -webkit-transition: all 0.5s; 
+}
+

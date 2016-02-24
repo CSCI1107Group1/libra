@@ -1,9 +1,11 @@
 <%= render "layouts/navbar" %>
 <section>
   <div class="news-item">
-    <img src="<%= @book.image_path %>" alt="Cover of: <%= @book.title %>">
-      <h3><%= @book.title %></h3>
-      <p><%= @book.summary %></p>
-      <p><%= "Edit" if current_user.owner?(@book) %></p>
+    <a href="<%= @book.book_path %>">
+      <img src="<%= @book.image_path %>" alt="Cover of: <%= @book.title %>" class="book_cover">
+    </a>
+    <h3><%= @book.title %></h3>
+    <p><%= @book.summary %></p>
+    <p><%= link_to "Edit", "/books/edit/#{params[:id]}" if current_user.owner?(@book) %></p>
   </div>
 </section>
