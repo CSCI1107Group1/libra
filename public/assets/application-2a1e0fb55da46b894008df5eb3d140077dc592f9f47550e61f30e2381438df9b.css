@@ -1,0 +1,190 @@
+/* line 5, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+aside {
+  position: fixed;
+  float: left;
+  width: 25%;
+  padding-left: 5px;
+  background-color: #AAA;
+  height: 102%;
+}
+
+/* line 15, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+section {
+  width: 73%;
+  padding-left: 2%;
+  float: right;
+}
+
+/* line 23, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+aside img {
+  position: relative;
+  left: -10%;
+  max-width: 120%;
+}
+
+/* line 30, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.image-frame {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* line 38, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.sidebar-options {
+  padding: 0;
+  margin-top: 10%;
+}
+
+/* line 45, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.sidebar-options a {
+  display: block;
+  padding: 15px 5px;
+  color: #333;
+  width: 99%;
+  list-style: none;
+  border-top: 1px solid #DDD;
+}
+
+/* line 55, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.sidebar-options a:hover {
+  background-color: #333;
+  color: #DDD;
+}
+
+/* line 61, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.news-item {
+  background-color: #FEFEFE;
+  box-shadow: 1px 1px 3px #555;
+  overflow: auto;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+/* line 71, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.news-item a {
+  color: #888;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+/* line 78, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.news-item > h3 {
+  margin-top: 5px;
+  font-size: 2em;
+}
+
+/* line 84, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.news-item img {
+  width: 20%;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 90, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.news-item p {
+  margin-right: 20px;
+  margin-top: 10px;
+  float: right;
+  width: 75%;
+}
+
+/* line 98, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.news-item:hover {
+  background-color: #EFEFEF;
+}
+
+/* line 103, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.author_link {
+  font-style: italic;
+}
+
+/* line 111, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.book_cover {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 0.5s;
+}
+
+/* line 117, /home/aaron/github/libra/app/assets/stylesheets/books.scss */
+.book_cover:hover {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 0.5s;
+}
+/* line 6, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+aside {
+  position: fixed;
+  float: left;
+  width: 25%;
+  padding-left: 5px;
+}
+
+/* line 14, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+section {
+  width: 73%;
+  padding-left: 2%;
+  float: right;
+}
+
+/* line 22, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+.list-group img {
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+/* line 28, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+.login_container {
+  width: 40%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* line 34, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+.login_container > form > label {
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+/* line 41, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+.login_container > form > input {
+  margin-bottom: 10px;
+}
+
+/* line 47, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+h1 {
+  font-size: 250%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 55, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+label {
+  margin-top: 10px;
+}
+
+/* line 59, /home/aaron/github/libra/app/assets/stylesheets/pages.scss */
+.btn {
+  margin-top: 15px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+*= require bootstrap;
+*= require bootstrap-sprockets;
+

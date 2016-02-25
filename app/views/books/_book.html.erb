@@ -1,0 +1,28 @@
+<div class="news-item">
+  <a href="<%= book.book_path %>" class="image_link">
+    <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+    <img src="<%= book.image_path %>" alt="Cover of: <%= book.title %>" class="book_cover">
+  </a>
+  <% if sample then %>
+    <h3><a href= <%= "/books/#{book.id}" %>><%= book.title %></a></h3>
+  <% else %>
+    <h3><%= book.title %></h3>
+  <% end %>
+
+  <p><a href="<%= "users/#{book.user_id}" %>"><%= "#{book.user.first_name} #{book.user.last_name}" %></a></p>
+
+  <p class="genre"><%= book.genre %></p>
+
+  <% if sample then %>
+    <p><%= excerpt(book.summary, '', radius: 200) %></p>
+  <% else %>
+    <p><%= book.summary %></p>
+  <% end %>
+
+  <% unless sample then %>
+    <p><%= link_to "Edit", "/books/edit/#{params[:id]}" if current_user.owner?(book) %></p>
+  <% end %>
+
+  <p><span class="glyphicon glyphicon-book" aria-hidden="true"></span> <%= link_to "Read", book.book_path %></p>
+
+</div>

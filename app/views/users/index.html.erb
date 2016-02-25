@@ -2,8 +2,12 @@
 <section>
   <% @users.each do |u| %>
     <div class="news-item">
-      <img src="<%= u.image_path %>" alt="Picture of of: <%= u.first_name %>">
+      <a href="<%= "users/#{u.id}" %>" class="image_link profile_image">
+        <span class="glyphicon glyphicon-user"></span>
+        <img src="<%= u.image_path %>" alt="Picture of of: <%= u.first_name %>">
+      </a>
       <h3><%= link_to "#{u.first_name} #{u.last_name}", "/users/#{u.id}" %></h3>
+      <p><%= excerpt(u.bio, '', radius: 200) %></p>
     </div>
   <% end %>
 </section>
