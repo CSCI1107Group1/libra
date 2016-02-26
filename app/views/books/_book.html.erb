@@ -9,18 +9,22 @@
     <h3><%= book.title %></h3>
   <% end %>
 
-  <p><a href="<%= "users/#{book.user_id}" %>"><%= "#{book.user.first_name} #{book.user.last_name}" %></a></p>
+  <p><a href="<%= "/users/#{book.user_id}" %>"><%= "#{book.user.first_name} #{book.user.last_name}" %></a></p>
 
   <p class="genre"><%= book.genre %></p>
 
   <% if sample then %>
     <p><%= excerpt(book.summary, '', radius: 200) %></p>
+    <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><%= link_to " More...", "/books/#{book.id}" %></p>
+
   <% else %>
     <p><%= book.summary %></p>
   <% end %>
 
   <% unless sample then %>
-    <p><%= link_to "Edit", "/books/edit/#{params[:id]}" if current_user.owner?(book) %></p>
+    <% if current_user.owner?(book) %>
+      <p> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <%= link_to "Edit", "/books/edit/#{params[:id]}" %> </p>
+    <% end %>
   <% end %>
 
   <p><span class="glyphicon glyphicon-book" aria-hidden="true"></span> <%= link_to "Read", book.book_path %></p>

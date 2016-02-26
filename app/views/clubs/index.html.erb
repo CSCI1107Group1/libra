@@ -1,0 +1,11 @@
+<%= render "layouts/navbar" %>
+
+<section>
+  <div class="news-item add_button">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    <h3><%= link_to "Make a new club", "/clubs/new" %></h3>
+  </div>
+  <% @clubs.each do |c| %>
+    <%= render "clubs/club", club: c, sample: true %>
+  <% end %>
+</section>

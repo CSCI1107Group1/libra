@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
     root 'sessions#new'
     get '/books' => 'books#index'
+    #get '/books/genres' => 'books#genres'
     get '/books/new' => 'books#new'
     post '/books' => 'books#create'
     get '/books/edit/:id' => 'books#edit'
@@ -23,6 +24,15 @@ Rails.application.routes.draw do
     get '/users/edit/:id' => 'users#edit'
     post'/users/edit/:id' => 'users#update'
     get '/users/:id' => 'users#show'
+
+    get '/clubs' => 'clubs#index'
+    post '/clubs' => 'clubs#create'
+    get '/clubs/new' => 'clubs#new'
+    get '/clubs/edit/:id' => 'clubs#edit'
+    post '/clubs/join/:id' => 'clubs#join'
+    post '/clubs/leave/:id' => 'clubs#leave'
+    post '/clubs/:id' => 'clubs#update'
+    get '/clubs/:id' => 'clubs#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

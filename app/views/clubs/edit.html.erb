@@ -1,0 +1,13 @@
+<%= render '/layouts/navbar' %>
+
+<section>
+  <%= form_for :club, url:"/clubs/#{@club.id}", :action=>"upload" do |f| %>
+    <%= f.label(:l_name, "Name:") %>
+    <%= f.text_field(:name, class: 'form-control') %>
+    <%= f.label(:l_description, "Description:") %>
+    <%= f.text_area(:description, rows: '5', class: 'form-control') %>
+    <%= f.label(:l_book, "Book ID:") %>
+    <%= f.text_field(:book_id, class: 'form-control', value: @club.book_id) %>
+    <%= f.submit("Update Club", class: "btn btn-primary") %>
+  <% end %>
+</section>

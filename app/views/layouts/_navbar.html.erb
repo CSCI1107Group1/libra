@@ -1,12 +1,15 @@
 <aside>
   <h2><%= "#{current_user.first_name} #{current_user.last_name}" %></h2> 
+  <%#
   <div class="image-frame">
-    <img src="<%= current_user.image_path %>">
+    <img src="<% current_user.image_path $>">
   </div>
+  %>
   <ul class="sidebar-options">
-      <li><%= link_to "Currently reading", "/books" %></li>
-      <li><%= link_to "Add books", "/books/new" %></li>
+      <li><%= link_to "Book clubs", "/clubs" %> </li>
+      <li><%= link_to "Find books", "/books" %></li>
       <li><%= link_to "Authors", "/users" %></li>
+      <li><%= link_to "Add books", "/books/new" %></li>
       <li><%= link_to "Edit Account", "/users/edit/#{current_user.id}" %></li>
       <li><%= link_to "Log out", '/users/logout', method: "delete" %></li>
   </ul>

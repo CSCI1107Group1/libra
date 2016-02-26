@@ -1,0 +1,13 @@
+<%= render "layouts/navbar" %>
+
+<section>
+  <%= render "clubs/club", club: @club, sample: false %>
+  <% unless current_user.club.exists?(@club) then %>
+    <h3><%= link_to "Join club", "/clubs/join/#{@club.id}", method: :post %></h3>
+  <% else %>
+    <h3><%= link_to "Leave club", "/clubs/leave/#{@club.id}", method: :post %></h3>
+  <% end %>
+
+  <h3>Currently reading</h3>
+  <%= render "books/book", book: @book, sample: true %>
+</section>

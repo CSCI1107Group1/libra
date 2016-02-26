@@ -68,6 +68,7 @@ aside img {
   width:95%;
   padding: 5px;
   margin-bottom: 25px;
+  margin-top: 5px;
 }
 
 .news-item a {
@@ -81,6 +82,7 @@ aside img {
 
   margin-top: 5px; 
   font-size: 2em;
+
 }
 
 .news-item img {
@@ -160,3 +162,15 @@ aside img {
   padding: 40% 40%;
 }
 
+.book_club > p {
+
+  margin-right: 0px;
+  width: 100%;
+}
+.add_button > h3 {
+  display: inline;
+  width: 90%;
+}
+.add_button > span {
+  font-size: 200%;
+}

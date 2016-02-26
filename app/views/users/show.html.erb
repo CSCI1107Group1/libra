@@ -5,7 +5,7 @@
       <img src="<%= @user.image_path %>" alt="Picture of of: <%= @user.first_name %>">
     </a>
     <h3><%= link_to "#{@user.first_name} #{@user.last_name}", "/users/#{@user.id}" %></h3>
-    <p><%= excerpt(@user.bio, '', radius: 200) %></p>
+    <p><%= @user.bio %></p>
   </div>
   <% @books.each do |b| %>
     <%= render "books/book", book: b, sample: true %>
