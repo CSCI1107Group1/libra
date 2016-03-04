@@ -7,6 +7,7 @@ class ClubsController < ApplicationController
   def show
     @club = Club.find(params[:id])
     @book = Book.find(@club.book_id)
+    @comments = Comment.where(club_id: @club.id)
   end
 
   def new

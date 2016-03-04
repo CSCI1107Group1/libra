@@ -34,6 +34,8 @@ Rails.application.routes.draw do
     post '/clubs/:id' => 'clubs#update'
     get '/clubs/:id' => 'clubs#show'
 
+    post '/comments' => 'comments#create'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

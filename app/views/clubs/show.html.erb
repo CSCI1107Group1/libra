@@ -10,4 +10,26 @@
 
   <h3>Currently reading</h3>
   <%= render "books/book", book: @book, sample: true %>
+
+  <% if current_user.club.exists?(@club) then %>
+    <h3>Comments</h3>
+    <%= form_for :comment, url:"/comments" do |f| %>
+      <%= f.label(:l_comment, "Comment:") %>
+      <%= f.text_area(:comment, class: "form-control") %>
+      <%= f.hidden_field(:club_id, value: @club.id) %>
+      <%= f.submit("Post Comment", class: "btn btn-primary") %>
+    <% end %>
+    
+    <% @comments.each do |c| %> 
+      <div class="news-item">
+        <a href="<%= "users/#{c.user.id}" %>" class="image_link profile_image">        
+          <span class="glyphicon glyphicon-user"></span>
+          <img src="<%= c.user.image_path %>" alt="Picture of <%= c.user.first_name %>">
+        </a>
+        <h3><%= "#{c.user.first_name} #{c.user.last_name}" %></h3>
+        <p><%= c.comment %></p>
+      </div>
+    <% end %>
+
+  <% end %>
 </section>

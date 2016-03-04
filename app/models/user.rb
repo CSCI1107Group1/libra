@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many  :book
   has_many :subscription
   has_many :club, through: :subscription
+  has_many :comment
 
   def owner? (the_book)
      the_book.user.id == self.id
