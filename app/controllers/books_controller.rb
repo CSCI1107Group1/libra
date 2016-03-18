@@ -22,13 +22,13 @@ class BooksController < ApplicationController
 
     if (current_user != nil) then
       #Get uploaded book
-      book_tmp = params[:book][:book_pdf].tempfile
+      book_tmp = params[:book][:book_pdf].tempfile.path
       #Generate book paths
       book_filename = generate_filename(params[:book][:book_pdf].original_filename)
       book_path = File.join("public/media/pdf", book_filename)
       book_link_path = File.join("/media/pdf", book_filename)
       #Move books
-      FileUtils.mv book_tmp.path, book_path 
+      FileUtils.mv book_tmp, book_path 
       FileUtils.chmod 0655, book_path
 
       #Get uploaded image

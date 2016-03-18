@@ -23,10 +23,11 @@ User.create(email: "oscar@email.com", first_name: "Oscar", last_name: "Wilde", p
 puts ("Added users")
 
 Club.create(name: "Classic literature club", book_id: 1, user_id: 1, description: "For enthusiasts of classical literature. We talk about reading books and stuff. Idk. The rest of this will just be some lorem ipsum I guess. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan nisi id felis mollis vehicula. Aenean tristique urna velit, at tempus lorem ultrices finibus. Vivamus sed vestibulum nisi. Cras sem velit, facilisis id porttitor suscipit, hendrerit eget massa. Nunc eros orci, venenatis non pulvinar quis, convallis id ex. Vivamus sit amet volutpat erat, ac efficitur ipsum. Vestibulum venenatis aliquam justo, id viverra lorem ultrices nec. Suspendisse potenti. Nunc ut ante in tellus pretium convallis. Fusce facilisis urna odio, et sagittis nisi sollicitudin vitae. Nulla sed egestas enim, quis feugiat libero. Curabitur magna mauris, aliquam et mauris sit amet, vestibulum feugiat augue. Etiam eget bibendum mi. Praesent eget libero non mi egestas convallis ac id eros. Integer odio leo, aliquet eget nibh sit amet, consectetur ultricies dolor. Vestibulum a purus volutpat, facilisis ex in, varius nunc.")
+Club.create(name: "Science fiction book club", book_id: 4, user_id: 5, description: "We read books about space and stuff. It's pretty radical. Science is crazy and you know it. Bill Nye knew it and that guy is so rad it's actually borderline galactic. Don't forget your towel.")
 
 Subscription.create(club_id: 1, user_id: 1)
 Subscription.create(club_id: 1, user_id: 2)
-Subscription.create(club_id: 1, user_id: 3)
+Subscription.create(club_id: 1, user_id: 4)
 
 
 puts ("Added clubs")
